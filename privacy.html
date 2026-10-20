@@ -29,7 +29,7 @@
 </head>
 <body>
   <h1>Politique de confidentialité</h1>
-  <p class="updated">Application Stridea — Dernière mise à jour : 18 septembre 2026</p>
+  <p class="updated">Application Stridea — Dernière mise à jour : 20 octobre 2026</p>
 
   <p>
     Stridea (« l'application », « nous ») est une application de course à pied qui te propose
@@ -69,6 +69,24 @@
       <td>Tenir ton historique et améliorer la qualité des données de spots</td>
       <td>Exécution du contrat / intérêt légitime</td>
     </tr>
+    <tr>
+      <td>Plans d'entraînement : objectif, date de course, disponibilités, niveau, séances réalisées et ressentis</td>
+      <td>Construire et suivre ton plan</td>
+      <td>Exécution du contrat</td>
+    </tr>
+    <tr>
+      <td>Blessures ou contraintes que tu déclares (donnée de santé, facultative)</td>
+      <td>Adapter la progression de ton plan. Elle n'est utilisée qu'à cette fin.</td>
+      <td>Ton consentement explicite (tu choisis de la renseigner)</td>
+    </tr>
+    <tr>
+      <td>Connexion Strava (facultative) : jetons d'accès, et tes courses en lecture seule (distance, durée, date)</td>
+      <td>Estimer ton allure et ton volume habituels, et retrouver une course pour valider une séance.
+          Stridea ne publie rien sur Strava. Ces données ne sont montrées qu'à toi et ne sont jamais
+          utilisées pour entraîner ou alimenter un système d'intelligence artificielle. Tu peux
+          déconnecter Strava à tout moment depuis le profil.</td>
+      <td>Ton consentement (tu autorises la connexion)</td>
+    </tr>
   </table>
 
   <p>
@@ -82,6 +100,7 @@
   <table>
     <tr><th>Service</th><th>Rôle</th><th>Données transmises</th></tr>
     <tr><td>Supabase</td><td>Hébergement, authentification, base de données, stockage de la photo de profil</td><td>Compte, profil, photo de profil, séances, courses</td></tr>
+    <tr><td>Strava</td><td>Lecture de tes courses, si tu relies ton compte (optionnel)</td><td>Jeton d'autorisation ; Strava reçoit les requêtes de lecture</td></tr>
     <tr><td>Google</td><td>Connexion « Se connecter avec Google » (optionnelle)</td><td>Identifiants d'authentification</td></tr>
     <tr><td>Mapbox</td><td>Fond de carte et nom du lieu</td><td>Coordonnées affichées</td></tr>
     <tr><td>Open-Meteo</td><td>Météo (chaleur / UV)</td><td>Coordonnées approximatives</td></tr>
@@ -93,7 +112,7 @@
   <p>
     Tes données sont conservées tant que ton compte existe. Lorsque tu supprimes ton compte
     (voir ci-dessous), l'ensemble de tes données personnelles — profil, photo de profil,
-    séances, courses, signalements — est effacé de nos bases sans délai.
+    séances, courses, plans d'entraînement, jetons Strava, signalements — est effacé de nos bases sans délai.
   </p>
 
   <h2>4. Tes droits</h2>
