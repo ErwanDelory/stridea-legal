@@ -87,6 +87,15 @@
           déconnecter Strava à tout moment depuis le profil.</td>
       <td>Ton consentement (tu autorises la connexion)</td>
     </tr>
+    <tr>
+      <td>Clé d'API d'un fournisseur d'IA (facultative) et réponses de ton questionnaire de plan, dont les blessures que tu déclares</td>
+      <td>Faire construire ton plan par un modèle d'intelligence artificielle, si tu l'actives.
+          Ta clé est enregistrée dans le trousseau sécurisé de ton téléphone et n'est jamais
+          transmise à Stridea. Tes réponses partent directement de ton téléphone vers le
+          fournisseur que tu as choisi (Anthropic), avec ta clé et sous ton compte chez lui : elles
+          ne transitent pas par nos serveurs. Les données Strava et ta position ne sont jamais envoyées.</td>
+      <td>Ton consentement (tu enregistres ta clé et lances la génération)</td>
+    </tr>
   </table>
 
   <p>
@@ -101,6 +110,7 @@
     <tr><th>Service</th><th>Rôle</th><th>Données transmises</th></tr>
     <tr><td>Supabase</td><td>Hébergement, authentification, base de données, stockage de la photo de profil</td><td>Compte, profil, photo de profil, séances, courses</td></tr>
     <tr><td>Strava</td><td>Lecture de tes courses, si tu relies ton compte (optionnel)</td><td>Jeton d'autorisation ; Strava reçoit les requêtes de lecture</td></tr>
+    <tr><td>Anthropic (facultatif)</td><td>Génération de ton plan par IA, avec ta propre clé</td><td>Réponses du questionnaire de plan, envoyées depuis ton téléphone ; régi par les conditions et la politique de confidentialité d'Anthropic</td></tr>
     <tr><td>Google</td><td>Connexion « Se connecter avec Google » (optionnelle)</td><td>Identifiants d'authentification</td></tr>
     <tr><td>Mapbox</td><td>Fond de carte et nom du lieu</td><td>Coordonnées affichées</td></tr>
     <tr><td>Open-Meteo</td><td>Météo (chaleur / UV)</td><td>Coordonnées approximatives</td></tr>
